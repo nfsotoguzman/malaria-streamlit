@@ -49,9 +49,9 @@ if archivo is not None:
 
     # Interpretar resultado
     if probabilidad >= 0.5:
-        clase = "Uninfected"
-    else:
         clase = "Parasitized"
+    else:
+        clase = "Uninfected"
 
     st.subheader("Resultado de la predicción")
     st.write(f"**Clase predicha:** {clase}")
